@@ -1,2 +1,3 @@
 # Mirrorx
 alias mirrorx='sudo reflector --verbose --latest 5 --age 6 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
+

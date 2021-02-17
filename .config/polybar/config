@@ -152,6 +152,11 @@ format-prefix = ""
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-underline = ${colors.secondary}
 
+label-active-padding = 0
+label-urgent-padding = 0
+label-occupied-padding = 0
+label-empty-padding = 0
+
 label-layout = %layout%
 label-layout-underline = ${colors.secondary}
 
@@ -485,6 +490,7 @@ screenchange-reload = true
 ;compositing-foreground = source
 ;compositing-border = over
 ;pseudo-transparency = false
+
 
 [global/wm]
 margin-top = 0

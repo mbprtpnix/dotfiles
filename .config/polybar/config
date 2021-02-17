@@ -155,10 +155,16 @@ format-prefix-underline = ${colors.secondary}
 label-layout = %layout%
 label-layout-underline = ${colors.secondary}
 
-label-indicator-padding = 2
-label-indicator-margin = 1
+label-indicator-padding = 0
+label-indicator-margin = 0
 label-indicator-background = ${colors.secondary}
 label-indicator-underline = ${colors.secondary}
+label-indicator-on-capslock =
+label-indicator-off-capslock =
+label-indicator-on-numlock =
+label-indicator-off-numlock =
+label-indicator-on-scrolllock =
+label-indicator-off-scrolllock =
 
 [module/filesystem]
 type = internal/fs

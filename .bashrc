@@ -7,6 +7,9 @@
 
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
+source /usr/share/fzf/key-bindings.bash
+source /usr/share/fzf/completion.bash
+
 source ~/.bash_completion.d/complete_alias
 complete -F _complete_alias config
 

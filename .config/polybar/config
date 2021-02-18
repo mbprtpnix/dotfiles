@@ -153,8 +153,6 @@ format-prefix = ""
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-underline = ${colors.secondary}
 
-interval = 25
-
 label-active-padding = 0
 label-urgent-padding = 0
 label-occupied-padding = 0

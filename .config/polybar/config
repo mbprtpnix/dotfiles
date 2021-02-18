@@ -43,7 +43,7 @@ font-0 = Fira Code:pixelsize=10;2
 font-1 = Fira Code:fontformat=truetype:size=8:antialias=false;2
 font-2 = Fira Code:pixelsize=10;2
 
-modules-left = bspwm
+modules-left = bspwm xwindow
 modules-center = date uptime
 modules-right = networkspeeddown networkspeedup pulseaudio xkeyboard wlan eth battery kernel pacman
 
@@ -151,6 +151,8 @@ blacklist-0 = num lock
 format-prefix = ""
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-underline = ${colors.secondary}
+
+interval = 25
 
 label-active-padding = 0
 label-urgent-padding = 0

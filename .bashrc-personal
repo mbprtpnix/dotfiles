@@ -4,3 +4,7 @@ alias mirrorx='sudo reflector --verbose --latest 5 --age 6 --protocol https --so
 # System
 alias update='sudo pacman -Syu'
 
+# xclip
+alias x='xclip -selection c -i'					# Cut (does not filter)
+alias c='xclip -selection c -i -f'			# Copy (does filter)
+alias v='xclip -selection c -o'					# Paste

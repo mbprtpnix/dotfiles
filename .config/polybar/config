@@ -121,7 +121,7 @@ format-underline = #C15D3E
 
 [module/kernel]
 type = custom/script
-exec = uname -r
+exec = uname -r | sed "s/-.*//g"
 label = %output%
 tail = false
 interval = 1024

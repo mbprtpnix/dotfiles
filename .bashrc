@@ -19,8 +19,24 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 export TERM="xterm-256color"
 export GPG_TTY=$(tty)
 
-# Ignore upper and lowercase when TAB completion
-bind "set completion-ignore-case on"
+### PATH
+if [ -d "$HOME/.bin" ] ;
+  then PATH="$HOME/.bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ;
+  then PATH="$HOME/.local/bin:$PATH"
+fi
+
+### CHANGE TITLE OF TERMINALS
+case ${TERM} in
+  xterm*|rxvt*|gnome*|alacritty|xfce4*)
+    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
+        ;;
+  screen*)
+    PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
+    ;;
+esac
 
 ### ARCHIVE EXTRACTION
 # Usage: ex <file>
@@ -48,5 +64,8 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+# Ignore upper and lowercase when TAB completion
+bind "set completion-ignore-case on"
 
 PS1='[\u@\h \W]\$ '

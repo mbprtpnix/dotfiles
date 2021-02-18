@@ -1,10 +1,39 @@
-# Mirrorx
+## Mirrorx
 alias mirrorx='sudo reflector --verbose --latest 5 --age 6 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 
-# System
+## System
 alias update='sudo pacman -Syu'
 
-# xclip
+## xclip
 alias x='xclip -selection c -i'					# Cut (does not filter)
 alias c='xclip -selection c -i -f'			# Copy (does filter)
 alias v='xclip -selection c -o'					# Paste
+
+## Get top process eating memory
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+
+## Get top process eating cpu
+alias pscpu='ps auxf | sort -nr -k 3'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+
+# Changing "ls" to "exa"
+alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -l --color=always --group-directories-first'  # long format
+alias lt='exa -aT --color=always --group-directories-first' # tree listing
+alias l.='exa -a | egrep "^\."'
+
+# Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# Confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+
+# Adding flags
+alias df='df -h'                          # human-readable sizes
+alias free='free -m'                      # show sizes in MB

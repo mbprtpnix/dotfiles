@@ -143,6 +143,7 @@ format-underline = #f90000
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
+format-underline = #f90000
 
 [module/xkeyboard]
 type = internal/xkeyboard

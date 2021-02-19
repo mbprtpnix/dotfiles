@@ -44,8 +44,8 @@ font-1 = JetBrains Mono:fontformat=truetype:size=8:antialias=false;2
 font-2 = JetBrains Mono:pixelsize=10;2
 
 modules-left = bspwm
-modules-center = date uptime
-modules-right = networkspeeddown networkspeedup pulseaudio xkeyboard wlan eth battery kernel pacman
+modules-center = 
+modules-right = uptime networkspeeddown networkspeedup pulseaudio xkeyboard wlan eth battery kernel pacman date
 
 tray-position = right
 tray-padding = 2

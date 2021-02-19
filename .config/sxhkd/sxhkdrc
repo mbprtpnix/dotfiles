@@ -32,7 +32,7 @@ super + Return
 
 # program launcher
 super + @space
-	rofi -modi drun,run -show drun -font "Fira Code 10" -show-icons
+	rofi -modi drun,run -show drun -font "JetBrains Mono 10" -show-icons
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -150,4 +150,4 @@ super + {Left,Down,Up,Right}
 
 # i3lock-fancy
 super + shift + x
-	i3lock-fancy -f 'Fira-Code-Regular'
+	i3lock-fancy -f 'JetBrains-Mono-Regular'

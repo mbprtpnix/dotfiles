@@ -69,3 +69,4 @@ ex ()
 bind "set completion-ignore-case on"
 
 PS1='[\u@\h \W]\$ '
+

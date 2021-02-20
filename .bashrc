@@ -18,6 +18,7 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 export TERM="xterm-256color"
 export GPG_TTY=$(tty)
+export EDITOR=nvim
 
 ### PATH
 if [ -d "$HOME/.bin" ] ;

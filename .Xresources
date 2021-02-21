@@ -1,3 +1,8 @@
+Xft.dpi: 96
+URxvt.font: xft:JetBrains Mono:size=12
+URxvt.boldFont: xft:JetBrains Mono:size=12
+URxvt.scrollBar: false
+
 xterm*faceName: Source Code Pro
 xterm*faceSize: 10
 

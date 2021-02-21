@@ -2,8 +2,8 @@
 alias mirrorx='sudo reflector --verbose --latest 5 --age 6 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 
 ## System
-alias pacup='sudo pacman -Syu'
-alias pacsy='sudo pacman -Syyy'
+alias pacsyu='sudo pacman -Syu'
+alias pacsyy='sudo pacman -Syy'
 
 ## xclip
 alias x='xclip -selection c -i'					# Cut (does not filter)

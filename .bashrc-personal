@@ -1,6 +1,9 @@
 ## Mirrorx
 alias mirrorx='sudo reflector --verbose --latest 5 --age 6 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 
+# Get error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
 ## System
 alias pacsyu='sudo pacman -Syu'
 alias pacsyy='sudo pacman -Syy'

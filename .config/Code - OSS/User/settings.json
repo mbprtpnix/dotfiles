@@ -1,0 +1,13 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontFamily": "'Fira Code'",
+    "editor.cursorStyle": "block",
+    "editor.inlineHints.fontFamily": "'Fira Code'",
+    "editor.cursorBlinking": "expand",
+    "editor.fontWeight": "normal",
+    "editor.fontLigatures": "true",
+    "terminal.integrated.fontFamily": "'Fira Code'",
+    "terminal.integrated.fontWeight": "normal",
+    "terminal.integrated.fontWeightBold": "normal",
+    "workbench.colorTheme": "GitHub Dark"
+}

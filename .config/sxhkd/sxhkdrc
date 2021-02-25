@@ -34,6 +34,10 @@ super + Return
 super + @space
 	rofi -modi drun,run -show drun -font "JetBrains Mono 10" -show-icons
 
+# rofi-pass
+super + x
+	rofi-pass
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

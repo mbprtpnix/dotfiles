@@ -10,6 +10,8 @@ picom --experimental-backend &
 
 nm-applet &
 
+kotatogram-desktop &
+
 xsetroot -cursor_name left_ptr &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
@@ -22,3 +24,4 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Chromium desktop='^10' follow=on
+bspc rule -a KotatogramDesktop desktop='^9'

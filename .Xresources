@@ -3,6 +3,8 @@ URxvt.font: xft:JetBrains Mono:size=12
 URxvt.boldFont: xft:JetBrains Mono:size=12
 URxvt.scrollBar: false
 
+rofi.font: Iosevka 12
+
 xterm*faceName: Source Code Pro
 xterm*faceSize: 10
 

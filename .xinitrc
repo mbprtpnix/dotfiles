@@ -52,5 +52,7 @@ fi
 dunst &
 # Set wallpaper
 nitrogen --restore &
+# Android Studio
+export _JAVA_AWT_WM_NONREPARENTING=1
 # Start Window Manager
 exec bspwm

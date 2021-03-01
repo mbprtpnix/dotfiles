@@ -10,7 +10,7 @@ picom --experimental-backend &
 
 nm-applet &
 
-kotatogram-desktop &
+# kotatogram-desktop &
 
 xsetroot -cursor_name left_ptr &
 

@@ -7,6 +7,8 @@
 
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
+[[ -f ~/.bash/keep.bash ]] && . ~/.bash/keep.bash
+
 source /usr/share/fzf/key-bindings.bash
 source /usr/share/fzf/completion.bash
 
@@ -28,16 +30,6 @@ fi
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
-
-### CHANGE TITLE OF TERMINALS
-case ${TERM} in
-  xterm*|rxvt*|gnome*|alacritty|xfce4*)
-    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
-        ;;
-  screen*)
-    PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
-    ;;
-esac
 
 ### ARCHIVE EXTRACTION
 # Usage: ex <file>
@@ -100,4 +92,20 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 ### "nvim" as manpager
 # export MANPAGER="nvim -c 'set ft=man' -"
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/master/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/master/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/master/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/master/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 

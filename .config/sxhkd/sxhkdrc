@@ -36,7 +36,7 @@ super + @space
 
 # rofi-pass
 super + x
-	rofi-pass
+	passmenu -fn 'Iosevka-12' -l 15 -b
 
 # make sxhkd reload its configuration files:
 super + Escape
